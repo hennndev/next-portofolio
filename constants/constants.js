@@ -54,21 +54,21 @@ export const allCourses = [
 export const allProjects = [
     {
         id: 1,
-        image: "crypto.jpg",
+        image: "crypto.png",
         url: 'https://react-cryptocurrencies.netlify.app',
         title: "Cryptocurrencies Live Search",
         desc: "React JS + Tailwind CSS + RapidAPI(CoinRanking)"
     },
     {
         id: 2,
-        image: "ig-project.jpg",
+        image: "ig-project.png",
         url: 'https://instagram-clone-23684.web.app',
         title: "Instagrame Clone",
         desc: "React JS + Styled Components + Firebase"
     },
     {
         id: 3,
-        image: "hulu-clone.jpg",
+        image: "hulu-clone.png",
         url: 'https://next-hulu-clone-seven.vercel.app',
         title: "Hulu Clone",
         desc: "React JS + Next Js + Tailwind CSS"
@@ -82,7 +82,7 @@ export const allProjects = [
     },
     {
         id: 5,
-        image: "img-ecommerce.jpg",
+        image: "img-ecommerce.png",
         url: 'https://ecommerce-oct.web.app/',
         title: "Ecommerce",
         desc: "React JS + Styled Components + Sweet Alert + Firebase"
