@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import Projects from '../components/projects/projects'
 import Wrapper from '../components/ui/wrapper'
+import { allProjects } from '../constants/constants'
+import Projects from '../components/projects/projects'
 
 const AllProjects = () => {
     return (
@@ -12,7 +13,7 @@ const AllProjects = () => {
         		<link rel="icon" href="/favicon.ico" />
       		</Head>
             <h1 className="font-bold text-3xl">My Projects</h1>
-            <Projects/>
+            <Projects projects={allProjects}/>
         </Wrapper>
     )
 }

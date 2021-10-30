@@ -1,11 +1,10 @@
 import React from 'react'
 import Project from './project'
-import { allProjects } from '../../constants/constants'
 
-const Projects = () => {
+const Projects = ({projects}) => {
     return (
         <div className="mt-7 grid grid-cols-autoFill gap-7">
-            {allProjects.map(project => (
+            {projects.map(project => (
                 <Project
                     key={project.id}
                     image={project.image}
