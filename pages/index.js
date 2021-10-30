@@ -51,7 +51,7 @@ export default function Home() {
 								<h3 className="mb-2 border-b-2 border-green-500 w-max">My Projects</h3>
 								<div className="flex items-center">
 									<ArrowSmRightIcon className="h-6 mr-3"/>
-									<p className="text-blue-500 cursor-pointer" onClick={() => router.push('/projects')}>My Projects</p>
+									<p className="text-blue-500 cursor-pointer" onClick={() => router.push('/all-projects')}>My Projects</p>
 								</div>
 							</div>
 
