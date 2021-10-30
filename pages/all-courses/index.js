@@ -59,7 +59,7 @@ const AllCourses = () => {
                     <h1 className="font-bold text-3xl">All Courses</h1>
                     <FilterIcon className="h-6 cursor-pointer" onClick={openModal}/>
                 </div>
-                {isModal && <Modal handleClose={closeModal} handleSubmit={handleSubmit}>
+                {isModal && <Modal>
                     <div className="text-gray-900 dark:text-gray-100">
                         
                         {/* CATEGORY */}
@@ -96,6 +96,18 @@ const AllCourses = () => {
                         <div className="flex flex-col mb-3">
                             <label className="mb-2" htmlFor="category">Total Duration</label>
                             <input id="duration" value={valuesFilter.duration} onChange={handleChange} className="py-1 px-3 placeholder-gray-800 dark:placeholder-gray-400 bg-transparent border border-gray-500 rounded" type="text" placeholder="Find by total duration (by hours)"/>
+                        </div>
+
+                        <div className="flex items-center absolute bottom-5 right-5">
+                            <button onClick={handleSubmit}
+                                className="shadow-md bg-blue-500 py-2 px-4 rounded text-gray-100 dark:bg-blue-600 mr-2">
+                                Submit
+                            </button>
+                            <button 
+                                onClick={closeModal} 
+                                className="shadow-md bg-gray-500 py-2 px-4 rounded text-gray-200 dark:bg-gray-600">
+                                Close
+                            </button>
                         </div>
                     </div>   
                 </Modal>}
