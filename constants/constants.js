@@ -54,35 +54,35 @@ export const allCourses = [
 export const allProjects = [
     {
         id: 1,
-        imgSrc: "crypto.jpg",
+        image: "crypto.jpg",
         url: 'https://react-cryptocurrencies.netlify.app',
         title: "Cryptocurrencies Live Search",
         desc: "React JS + Tailwind CSS + RapidAPI(CoinRanking)"
     },
     {
         id: 2,
-        imgSrc: "ig-project.jpg",
+        image: "ig-project.jpg",
         url: 'https://instagram-clone-23684.web.app',
         title: "Instagrame Clone",
         desc: "React JS + Styled Components + Firebase"
     },
     {
         id: 3,
-        imgSrc: "hulu-clone.jpg",
+        image: "hulu-clone.jpg",
         url: 'https://next-hulu-clone-seven.vercel.app',
         title: "Hulu Clone",
         desc: "React JS + Next Js + Tailwind CSS"
     },
     {
         id: 4,
-        imgSrc: "dummy-blog.png",
+        image: "dummy-blog.png",
         url: 'https://next-dummy-blog.vercel.app/',
         title: "Dummy Blog",
         desc: "React JS + Next Js + Tailwind CSS"
     },
     {
         id: 5,
-        imgSrc: "img-ecommerce.jpg",
+        image: "img-ecommerce.jpg",
         url: 'https://ecommerce-oct.web.app/',
         title: "Ecommerce",
         desc: "React JS + Styled Components + Sweet Alert + Firebase"

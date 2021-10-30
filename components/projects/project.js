@@ -1,12 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 import { ArrowSmRightIcon } from '@heroicons/react/outline'
 
-const Project = ({imgSrc, url, title, desc}) => {
+const Project = ({image, url, title, desc}) => {
 
     return (
         <div className="h-cardProject shadow-lg rounded overflow-hidden bg-gray-200 text-gray-700 bg-gray-100 dark:bg-gray-800 dark:text-gray-200 relative transition duration-200 ease-in">
-            <div className="h-image w-full">
-                <img src={`/images/${imgSrc}`} className="w-full h-full" />   
+            <div className="h-image w-full relative">
+                <Image src={`/images/${image}`} alt={image} className="w-full h-full" layout="fill" height={10} width={10}/>   
             </div>
             <div className="px-3 py-2">
                 <h3 className="mt-1 text-xl font-bold">{title}</h3>

@@ -1,11 +1,12 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Course = ({image, category, title, level, duration, lessons, desc, clicked}) => {
 
     return (
         <div className="h-card shadow-lg rounded overflow-hidden bg-gray-200 text-gray-700 bg-gray-100 dark:bg-gray-800 dark:text-gray-200 relative transition duration-200 ease-in cursor-pointer transform hover:-translate-y-1" onClick={clicked}>
-            <div className="h-image w-full">
-                <img src={`/images/${image}`} alt={image} className="w-full h-full" />   
+            <div className="h-image w-full relative">
+                <Image src={`/images/${image}`} alt={image} layout="fill" className="w-full h-full" width={10} height={10} />   
             </div>
             <div className="px-3 py-2">
                 <div className="flex items-center justify-between">
