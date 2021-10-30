@@ -22,7 +22,7 @@ export default function Home() {
 						<div>
 							<div className="mb-7">
 								<h1 className="font-bold text-6xl border-b-4 w-max pb-3 mb-5 border-green-500">HIRE ME.</h1>
-								<p>Hello, my name is Hendra Adri. I'm working as <br />
+								<p>Hello, my name is Hendra Adri. I{`'`}m working as <br />
 									<span className="text-blue-500 text-xl font-medium">
 										<Typed 
 											strings={['Fullstack Developer',
@@ -41,7 +41,7 @@ export default function Home() {
 							<div className="mb-7">
 								<h3 className="mb-2 border-b-2 border-green-500 w-max">About Me</h3>
 								<p>
-									I have experienced for this job more than 5 years. I'm freelancer and <br /> teach also about programming language from Indonesian.<br/>
+									I have experienced for this job more than 5 years. I{`'`}m freelancer and <br /> teach also about programming language from Indonesian.<br/>
 									Enjoy taking complex problem for building best apps and design is my passion. 
 								</p>
 							</div>
