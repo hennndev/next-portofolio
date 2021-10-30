@@ -8,7 +8,6 @@ const NotFound = () => {
     const router = useRouter()
 
     return (
-
         <>
             <Head>
                 <title>Page Not Found</title>
