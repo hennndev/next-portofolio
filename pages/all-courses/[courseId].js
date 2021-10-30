@@ -23,7 +23,7 @@ const CourseDetail = () => {
       		</Head>
             
             <div className="flex items-center mb-5 w-max cursor-pointer text-blue-500" onClick={() => router.back()}>
-                <ArrowSmLeftIcon class="h-7 mr-1"/>
+                <ArrowSmLeftIcon className="h-7 mr-1"/>
                 <p className="text-lg font-medium uppercase">Get Back</p>
             </div>
             <div className="flex flex-col md:flex-row justify-between">     
