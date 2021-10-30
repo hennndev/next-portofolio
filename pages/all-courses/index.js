@@ -40,7 +40,7 @@ const AllCourses = () => {
             }
         })
         if(queries) {
-            router.push(`${router.asPath}/courses/filter?${queries}`)
+            return router.push(`${router.asPath}/courses/filter?${queries}`)
         } 
     }
 
