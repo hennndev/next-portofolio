@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Modal from '../../components/ui/modal'
 import Wrapper from '../../components/ui/wrapper'
 import { FilterIcon } from '@heroicons/react/outline'
 import Courses from '../../components/courses/courses'
-import { useRouter } from 'next/router'
 import { categoryCourse, levelCourse, allCourses } from '../../constants/constants'
 
 const AllCourses = () => {

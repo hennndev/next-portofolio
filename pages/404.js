@@ -1,7 +1,7 @@
 import React from 'react'
-import { HomeIcon } from '@heroicons/react/outline'
-import { useRouter } from 'next/router'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { HomeIcon } from '@heroicons/react/outline'
 
 const NotFound = () => {
 

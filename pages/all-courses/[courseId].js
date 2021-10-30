@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Wrapper from '../../components/ui/wrapper'
-import { useRouter } from 'next/dist/client/router'
 import { findCourse } from '../../constants/constants'
 import { ArrowSmLeftIcon } from '@heroicons/react/outline'
 

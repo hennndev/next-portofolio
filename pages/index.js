@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Typed from 'react-typed'
 import { ArrowSmRightIcon } from '@heroicons/react/outline'
-import { useRouter } from 'next/dist/client/router'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Wrapper from '../components/ui/wrapper'
 

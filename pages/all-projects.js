@@ -1,7 +1,7 @@
 import React from 'react'
+import Head from 'next/head'
 import Projects from '../components/projects/projects'
 import Wrapper from '../components/ui/wrapper'
-import Head from 'next/head'
 
 const AllProjects = () => {
     return (

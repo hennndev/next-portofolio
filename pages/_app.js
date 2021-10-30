@@ -1,6 +1,7 @@
 import '../styles/globals.css'
-import Navbar from '../components/ui/navbar'
 import { useState } from 'react'
+import Navbar from '../components/ui/navbar'
+import Footer from '../components/ui/footer'
 
 function MyApp({ Component, pageProps }) {
 
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
     <main className={`${darkTheme ? 'dark' : 'light'}`}>
       <Navbar toggleTheme={() => setDarkTheme(!darkTheme)} darkTheme={darkTheme}/>
       <Component {...pageProps} />
+      <Footer/>
     </main>
   )
 }
