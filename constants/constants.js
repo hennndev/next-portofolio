@@ -5,7 +5,9 @@ export const allCourses = [
         category: "Programming",
         title: "Belajar Flow React JS untuk Pemula 🚀",
         level: 'Beginner',
-        desc: "Memahami alur logic framework react js dari dasar sampai advance topik"
+        desc: "Memahami alur logic framework react js dari dasar sampai advance topik",
+        duration: 12,
+        lessons: 60
     },
     {
         id: 2,
@@ -13,7 +15,9 @@ export const allCourses = [
         category: "Programming",
         title: "Memahami Node JS untuk Pemula 🚀",
         level: 'Beginner',
-        desc: "Memahami alur logic framework react js dari dasar sampai advance topik"
+        desc: "Memahami alur logic framework react js dari dasar sampai advance topik",
+        duration: 21,
+        lessons: 120
     },
     {
         id: 3,
@@ -21,7 +25,9 @@ export const allCourses = [
         category: "Programming",
         title: "Memahami Javascript dari Dasar hingga Mahir 🚀",
         level: 'All Level',
-        desc: "Memahami alur logic framework react js dari dasar sampai advance topik"
+        desc: "Memahami alur logic framework react js dari dasar sampai advance topik",
+        duration: 34,
+        lessons: 170
     },
     {
         id: 4,
@@ -29,7 +35,9 @@ export const allCourses = [
         category: "UI UX",
         title: "Desian UI/UX dengan Figma dari Basic hingga Advance",
         level: 'All Level',
-        desc: "Merancang User Interface dan User Experience dengan Figma"
+        desc: "Merancang User Interface dan User Experience dengan Figma",
+        duration: 20,
+        lessons: 97
     },
     {
         id: 5,
@@ -37,7 +45,9 @@ export const allCourses = [
         category: "Desain Grafis",
         title: "Step by step belajar Desain Grafis dengan Photosop dan Illustrator",
         level: 'Beginner',
-        desc: "Pemula yang ini menguasai tools Adobe Photoshop dan Illustrator dan merancangnya menjadi sebuah desain"
+        desc: "Pemula yang ini menguasai tools Adobe Photoshop dan Illustrator dan merancangnya menjadi sebuah desain",
+        duration: 11,
+        lessons: 55
     },
 ]
 
@@ -85,6 +95,7 @@ export const findCourse = (courseId) => allCourses.find(course => course.id === 
 export const filterCourses = (queries) => {
     return allCourses.filter(course => {
         return course.category.toLowerCase().includes(queries?.category?.toLowerCase() || '') &&
-            course.level.toLowerCase().includes(queries?.level?.toLowerCase() || '')
+            course.level.toLowerCase().includes(queries?.level?.toLowerCase() || '') &&
+            course.duration >= (+queries?.duration || 0)
     })
 }

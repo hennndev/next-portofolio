@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Course = ({image, category, title, level, desc, clicked}) => {
+const Course = ({image, category, title, level, duration, lessons, desc, clicked}) => {
 
     return (
         <div className="h-card shadow-lg rounded overflow-hidden bg-gray-200 text-gray-700 bg-gray-100 dark:bg-gray-800 dark:text-gray-200 relative transition duration-200 ease-in cursor-pointer transform hover:-translate-y-1" onClick={clicked}>
@@ -15,8 +15,8 @@ const Course = ({image, category, title, level, desc, clicked}) => {
                 <h3 className="mt-1 text-lg font-bold">{title}</h3>
                 <p className=" text-sm text-gray-600 dark:text-gray-300">{desc}</p>
                 <div className="flex items-center justify-between absolute bottom-2 left-2 right-2 text-gray-500  dark:text-gray-400 text-sm">
-                    <p> 60 Materi</p>
-                    <p>⏱ 10 hrs 30 mins</p>
+                    <p>{lessons} Materi</p>
+                    <p>⏱ {duration} hours</p>
                 </div>
             </div>
         </div>

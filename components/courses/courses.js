@@ -15,6 +15,8 @@ const Courses = ({courses}) => {
                     category={course.category}
                     title={course.title}
                     level={course.level}
+                    duration={course.duration}
+                    lessons={course.lessons}
                     desc={course.desc.split(' ').length > 12 ? `${course.desc.split(' ').slice(0, 10).join(' ')}...` : course.desc}
                     clicked={() => router.push(`/all-courses/${course.id}`)}/>
             )) : (

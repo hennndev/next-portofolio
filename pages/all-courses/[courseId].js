@@ -34,8 +34,8 @@ const CourseDetail = () => {
                     <h1 className="text-3xl md:text-4xl mb-4">{course.title}</h1>
                     <p className="text-xl md:text-2xl mb-2">{course.desc}.</p>
                     <p className="text-md mb-2">Level Course: {course.level}</p>
-                    <p className="text-md mb-2">Total Materi: 72 Materi</p>
-                    <p className="text-md mb-2">Total Durasi: 20 Jam 30 menit</p>
+                    <p className="text-md mb-2">Total Materi: {course.lessons} Materi</p>
+                    <p className="text-md mb-2">Total Durasi: {course.duration} jam</p>
                     <button className="bg-blue-500 py-3 px-5 rounded cursor-pointer text-gray-100">Enroll Now</button>
                 </div>
             </div>
