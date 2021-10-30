@@ -12,7 +12,7 @@ const Project = ({imgSrc, url, title, desc}) => {
                 <h3 className="mt-1 text-xl font-bold">{title}</h3>
                 <p className=" text-lg text-gray-600 dark:text-gray-300">{desc}</p>
                 <div className="flex items-center justify-between absolute bottom-2 left-2">
-                    <a href={url} target="_blank" rel="referrer" className="flex items-center text-md text-blue-500">
+                    <a href={url} target="_blank" rel="noreferrer" className="flex items-center text-md text-blue-500">
                         <ArrowSmRightIcon className="h-6 mr-1"/>
                         View Result
                     </a>
