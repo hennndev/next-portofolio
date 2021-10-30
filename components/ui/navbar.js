@@ -17,7 +17,7 @@ const Navbar = ({toggleTheme, darkTheme}) => {
     return (
         <header className="px-5 py-3 bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-200 w-full transition duration-200 ease-in">
             <div className="md:max-w-4xl xl:max-w-6xl md:mx-auto flex items-center justify-between ">
-                <h1 className="text-2xl">henndev</h1>
+                <h1 className="text-2xl" onClick={() => router.push('/')}>henndev</h1>
 
                 {/* DESKTOP, IPAD AND MORE++ */}
                 <nav className="hidden md:inline">

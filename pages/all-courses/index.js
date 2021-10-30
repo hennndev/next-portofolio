@@ -95,7 +95,7 @@ const AllCourses = () => {
                         {/* DURATION */}
                         <div className="flex flex-col mb-3">
                             <label className="mb-2" htmlFor="category">Total Duration</label>
-                            <input id="duration" value={valuesFilter.duration} onChange={handleChange} className="py-1 px-3 placeholder-gray-800 dark:placeholder-gray-400 bg-transparent border border-gray-500 rounded" type="text" placeholder="Find by total duration"/>
+                            <input id="duration" value={valuesFilter.duration} onChange={handleChange} className="py-1 px-3 placeholder-gray-800 dark:placeholder-gray-400 bg-transparent border border-gray-500 rounded" type="text" placeholder="Find by total duration (by hours)"/>
                         </div>
                     </div>   
                 </Modal>}
